@@ -34,7 +34,7 @@ spec:
 ```
 Replace nginx with your desired image and adjust other parameters as needed.
 - Apply the YAML file:
-- kubectl apply -f new-replicaset.yaml
+`kubectl apply -f new-replicaset.yaml`
 This command creates a new ReplicaSet named new-replica-set with 3 replicas (pods) running the specified container.
 ## Scaling a ReplicaSet
 - You can scale a ReplicaSet by either using kubectl scale or editing the ReplicaSet YAML file directly.
@@ -42,15 +42,15 @@ This command creates a new ReplicaSet named new-replica-set with 3 replicas (pod
 
 To scale the ReplicaSet `new-replica-set` to 5 pods, run:
 
-- kubectl scale replicaset new-replica-set --replicas=5
+ `kubectl scale replicaset new-replica-set --replicas=5`
 - This adjusts the number of replicas in the ReplicaSet to 5.
 ## Option 2: Editing the ReplicaSet YAML
 Edit the ReplicaSet configuration:
-- kubectl edit replicaset new-replica-set
+ `kubectl edit replicaset new-replica-set`
 - Save and exit the editor to apply the changes.
 
 ## Deleting a ReplicaSet
 To delete a ReplicaSet and its associated pods, use kubectl delete.
-- kubectl delete replicaset new-replica-set
+`kubectl delete replicaset new-replica-set`
 
 
