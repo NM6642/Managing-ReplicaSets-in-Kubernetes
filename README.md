@@ -50,7 +50,7 @@ Edit the ReplicaSet configuration:
 - Save and exit the editor to apply the changes.
 
 ## Deleting a ReplicaSet
-To delete a ReplicaSet and its associated pods, use kubectl delete.
+-To delete a ReplicaSet and its associated pods, use kubectl delete.
 `kubectl delete replicaset new-replica-set`
 
 
